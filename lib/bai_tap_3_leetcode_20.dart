@@ -34,7 +34,7 @@ bool isValid(String s) {
          return false;
        } else{
          if(listStack.contains('(')){
-           listStack.remove(')');
+           listStack.remove('(');
            break;
          } else{
            return false;
@@ -45,7 +45,7 @@ bool isValid(String s) {
           return false;
         } else{
           if(listStack.contains('{')){
-            listStack.remove('}');
+            listStack.remove('{');
             break;
           } else{
             return false;
@@ -56,7 +56,7 @@ bool isValid(String s) {
           return false;
         } else{
           if(listStack.contains('[')){
-            listStack.remove(']');
+            listStack.remove('[');
             break;
           } else{
             return false;
